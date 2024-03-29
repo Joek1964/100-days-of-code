@@ -1,0 +1,25 @@
+https://www.naukri.com/code360/problems/minimal-cost_8180930?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+#include<bits/stdc++.h>
+int recur(int n,vector<int>&dp,vector<int>&height,int k){
+    if(n==0){
+        return 0;
+    }
+    if(dp[n]!=-1){
+      return dp[n];
+    }
+    int mini = INT_MAX;
+    for(int j =1 ;j<=k;j++){
+      int jumps = INT_MAX;
+      if(n-j>=0) {
+          jumps = recur(n - j,dp,height,k) + abs(height[n] - height[n -j]);
+          mini = min(mini, jumps);
+        }
+    }
+      return dp[n] =  mini;
+    } 
+
+int minimizeCost(int n, int k, vector<int> &height){
+    // Write your code here.
+    vector<int>dp(n+1,-1);
+    return recur(n-1,dp,height,k);
+}
