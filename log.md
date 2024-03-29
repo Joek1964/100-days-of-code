@@ -184,3 +184,24 @@ Yesterday in class we saw different approaches, and .map is my favorite, it make
 
 **Thoughts** I am inclined to say, that I am really liking the possibilities of data analysis... not so sure if this goes that way, but I love making data lists and iterating through them to retrieve data. 
 
+### day 16: March 29th, 2024
+
+**Today´s Progress:** I have spent a good 2 hours struggling with the code to get it how I wanted it for the poker cards. Struggle is mainly cause the `prettier`app installed ini the boiler plate is faulty and driving me nuts. I will give up for today and un-install it (it´s a 10 minute video I have been lasy to watch, stuburn dude) and see if that works, to add injury to insult, I want it all to go inside bootsrap card.🥴
+It´s not that complicated... actually...
+> palos.map ((iterarot) => {
+> 
+>   cartas.map ((item) => {
+> 
+>     pics ((element) => {
+> 
+>
+>  // the whole point would be that: **pics are the pictures of the cards, one picture for all diamonds: so I need to iterate all "cards", from the "palos" that correlate to the "pic"... so...**🤔
+> 
+> })
+> 
+> })
+> 
+> });
+> 
+
+**Thoughts** I think I am trying to get something more complicated than I can handle, but then again that´s how you grow, right?
