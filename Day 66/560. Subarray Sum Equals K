@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int subarraySum(vector<int>& nums, int k) {
+        int ans=0;
+        unordered_map<int,int>mp;
+        vector<int>pf(nums.size());
+        pf[0]=nums[0];
+        for(int i =1;i<nums.size();i++){
+            pf[i] = pf[i-1] + nums[i];
+        }
+        for(auto it :pf){
+            cout<<it<<" ";
+        }
+        cout<<endl;
+        for(int i =0;i<nums.size();i++){
+            if(pf[i]==k){
+                ans++;
+            }
+            else if(mp.find(pf[i]-k)!=mp.end()){
+                ans+=mp[pf[i]-k];
+            }
+            mp[pf[i]]++;
+        }
+        for(auto it :mp){
+            cout<<it.first << " "<<it.second;
+            cout<<endl;
+        }
+        return ans;
+    }
+};
