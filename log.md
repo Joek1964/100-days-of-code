@@ -205,3 +205,15 @@ It´s not that complicated... actually...
 > 
 
 **Thoughts** I think I am trying to get something more complicated than I can handle, but then again that´s how you grow, right?
+
+
+### day 17: March 31st, 2024
+
+**Today´s Progress:** 👏🏼👏🏼👏🏼👏🏼👏🏼👏🏼👏🏼👏🏼👏🏼👏🏼👏🏼👏🏼🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉
+YEAAAAAAAH!!! I made it!!!! can´t believe it was so easy!!! but what a crucial mistake!!!
+It turns out the problem was "secuentiality" I was declaring the pictures last and thus getting the loop to use all 4 of them at the 3rd iteration! and that is why I was getting it wrong! I started another excerices on maps, and realized that was the problem!
+I am soo happy!
+
+![Iagen del triunfo](https://github.com/kamelmat/100-days-of-code/blob/master/Screenshot%202024-03-31%20at%2012.28.25.png?raw=true)
+
+**Thoughts** Just like accuracy when shooting, if you group then the problem is the rifle sight and not your aim, you adjust the sight. My "sight" thing is "secuentiality". I tend to forget the order of secuence is going to alter the outcome of the loop. The hours spent on these excercises will sure help me remember
