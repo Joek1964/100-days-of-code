@@ -1,0 +1,27 @@
+https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+int recur(int l,int r,vector<long long>&v,long long x){
+         int ans = -1;
+    while (l <= r) {
+        int m = l + (r - l) / 2;
+        // If the middle element is the target, return its index
+        if (v[m] == x) {
+            // ans = m - 1; // Update answer to the left element
+            // r = m - 1; // Search in the left half
+            return m;
+        }
+        // If the target is greater, search in the right half
+        else if (v[m] < x) {
+            ans = m; // Update answer to the current element
+            l = m + 1;
+        }
+        // If the target is smaller, search in the left half
+        else
+            r = m - 1;
+            
+    }
+        return ans;
+    }
+    int findFloor(vector<long long> v, long long n, long long x){
+
+    return recur(0,n-1,v,x);
+    }
