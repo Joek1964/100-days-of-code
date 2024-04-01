@@ -217,3 +217,13 @@ I am soo happy!
 ![Iagen del triunfo](https://github.com/kamelmat/100-days-of-code/blob/master/Screenshot%202024-03-31%20at%2012.28.25.png?raw=true)
 
 **Thoughts** Just like accuracy when shooting, if you group then the problem is the rifle sight and not your aim, you adjust the sight. My "sight" thing is "secuentiality". I tend to forget the order of secuence is going to alter the outcome of the loop. The hours spent on these excercises will sure help me remember
+
+
+### day 18: April 1st, 2024
+
+**Today´s Progress:** Well... it seems my code for the cards had a mistake, but the best part is that I was able to fix it. The main progress I am seeing is understanding what is going on and how I am structuring everything. The insight on "secuentiality" yesterday was crucial, but today´s rethinking was amazing. 
+
+![Iagen del triunfo](https://github.com/kamelmat/100-days-of-code/blob/master/Screenshot%202024-04-01%20at%2013.50.05.png?raw=true)
+
+**Thoughts** Practice makes perfect. I might not be the brightest in coding, but I am stuburn and selfdetermined, and efficient in hardwork and keeping schedules. 
+
