@@ -23,6 +23,8 @@ Method 2: efficeint
         string ans = "";
         for(auto it : order){
 //jab tak uski freq zero ninhoti dalte jao and then last me bache walo ko
+
+//isse saare aage aa jayemge bache huye usi same order mein piche reh jaynge
             while(mp2[it]-- >0){
                 ans.push_back(it);
                 // slower way is :ans+=it; ;
