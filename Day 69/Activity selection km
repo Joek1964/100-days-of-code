@@ -1,0 +1,32 @@
+https://www.geeksforgeeks.org/batch/dsa-galgotia-2/track/DSASP-Greedy/problem/activity-selection-1587115620
+class Solution
+{
+    public:
+    //Function to find the maximum number of activities that ca
+    // Function to find the maximum number of activities that can
+    // be performed by a single person.
+    int activitySelection(vector<int> start, vector<int> end, int n) {
+        // Corrected lambda function for sorting
+        auto comp = [&](pair<int,int> a, pair<int,int> b) {
+            return a.second < b.second;
+        };
+
+        vector<pair<int,int>> p;
+        for(int i = 0; i < n; i++) {
+            p.push_back(make_pair(start[i], end[i]));
+        }
+        
+        sort(p.begin(), p.end(), comp);
+        int last;
+
+        int ans = 1;
+        last=p[0].second;
+        for(int i = 1; i < n; i++) {
+            // Fixed condition to check for non-overlapping activities
+            if(p[i].first > last) {
+                ans++;
+                last=p[i].second;
+            }
+        }
+        return ans;
+    }
