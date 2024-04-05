@@ -1,0 +1,32 @@
+https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=bottom_sticky_on_article
+class Solution {
+    public:
+    
+    int lenOfLongSubarr(int a[],  int n, int k) { 
+        // Complete the function
+        std::unordered_map<int,int> mp;
+        std::vector<int> pf(n);
+        pf[0] = a[0];
+        int startIdx = -1, endIdx = -1;
+        for(int i = 1; i < n; i++){
+            pf[i] = pf[i-1] + a[i];
+        }
+        int ans = 0;
+        mp[0] = -1; // Edge case: when sum - k = 0, indicating the sum k starts from index 0
+        for(int j = 0; j < n; j++){
+            if(mp.find(pf[j] - k) != mp.end()){
+                // ans = max(ans, j - mp[pf[j] - k]);
+                int currentLength = j - mp[pf[j] - k];
+                if(currentLength > ans) {
+                    ans = currentLength;
+                    startIdx = mp[pf[j] - k] + 1; // Start index of the longest subarray
+                    endIdx = j; 
+                }
+            }
+            if(mp.find(pf[j]) == mp.end()) // Update mp only if pf[j] is not already present
+                mp[pf[j]] = j;
+        }
+        cout<<startIdx<<" "<<endIdx<<endl;
+        return ans;
+    } 
+};
