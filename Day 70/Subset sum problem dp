@@ -1,0 +1,31 @@
+https://www.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1
+class Solution{   
+public:
+bool isSubsetSum(vector<int>& arr, int sum) {
+        int n = arr.size();
+        
+        // Create a DP table with dimensions (n+1) x (sum+1)
+        vector<vector<bool>> dp(n + 1, vector<bool>(sum + 1, false));
+        
+        // Base case: If the sum is 0, then answer is always true (empty subset)
+        for (int i = 0; i <= n; ++i)
+            dp[i][0] = true;
+        
+        // Fill the DP table in bottom-up manner
+        for (int i = 1; i <= n; ++i) {
+            for (int j = 1; j <= sum; ++j) {
+                if (arr[i - 1] <= j) {
+                    // If the current element can be included, check if there's a subset sum
+                    // excluding the current element, or including it
+                    dp[i][j] = dp[i - 1][j - arr[i - 1]] || dp[i - 1][j];
+                } else {
+                    // If the current element is greater than the sum, exclude it
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+        
+        // The result is stored at dp[n][sum]
+        return dp[n][sum];
+    }
+};
