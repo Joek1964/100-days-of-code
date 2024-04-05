@@ -1,0 +1,56 @@
+https://leetcode.com/problems/make-the-string-great/description/?envType=daily-question&envId=2024-04-05
+class Solution {
+public:
+  string makeGood(string s) {
+        stack<char> st;
+        
+        for (char ch : s) {
+            if (!st.empty() && abs(st.top() - ch) == 32) { // Check if characters are of opposite case
+                st.pop();
+            } else {
+                st.push(ch);
+            }
+        }
+        
+        string result = "";
+        while (!st.empty()) {
+            result += st.top();
+            st.pop();
+        }
+        
+        reverse(result.begin(), result.end());
+        
+        return result;
+    }
+};
+
+//     string makeGood(string s) {
+//         stack<char>st;
+//         for(int i =0;i<s.size();i++){
+//             st.push(s[i]);
+//         }
+//             while (!st.empty()) {
+//             int x = int(st.top());
+//             st.pop();
+//                 if (st.empty()) { // Check if the stack becomes empty after popping
+//                     char c = x;
+//                     st.push(c); // Push back the last element
+//                     break; // Break out of the loop if the stack is empty
+//                 }
+//             int y = int(st.top());
+//             if (abs(x - y) == 32) { // Check if characters are of opposite case
+//                 st.pop();
+//             } else {
+//                 char c = x;
+//                 st.push(c);
+//             }
+//         }
+//         string v = "";
+//         while(!st.empty()){
+//             v+=st.top();
+//             st.pop();
+//         }
+//         reverse(v.begin(),v.end());
+//         return v;
+//     }
+// };
