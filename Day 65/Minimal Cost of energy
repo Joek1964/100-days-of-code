@@ -23,3 +23,28 @@ int minimizeCost(int n, int k, vector<int> &height){
     vector<int>dp(n+1,-1);
     return recur(n-1,dp,height,k);
 }
+#include<bits/stdc++.h>
+int recur(int n,vector<int>&dp,vector<int>&height,int k){
+    if(dp[n]==-1){
+        if(n==0){
+                dp[0] =0;
+                 return 0; // Base case, no cost to reach the 0th position
+            }
+            int mini = INT_MAX; 
+            for(int j =1 ;j<=k;j++){
+            int jumps = INT_MAX;
+                if (n - j >= 0) {
+                    jumps = recur(n - j, dp, height, k) + abs(height[n] - height[n - j]);
+                    mini = min(mini, jumps);
+                }
+            }
+            dp[n] = mini;
+    }
+    return dp[n];
+    } 
+
+int minimizeCost(int n, int k, vector<int> &height){
+    // Write your code here.
+    vector<int>dp(n+1,-1);
+    return recur(n-1,dp,height,k);
+}
