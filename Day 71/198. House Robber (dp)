@@ -1,0 +1,44 @@
+https://leetcode.com/problems/house-robber/
+class Solution {
+public:
+    int recur(int n ,vector<int>&arr,vector<int>&dp){
+        dp[0] = arr[0];
+    for (int i = 1; i < n; i++) {
+        // Calculate the maximum value by either picking the current element
+        // or not picking it (i.e., taking the maximum of dp[i-2] + arr[i] and dp[i-1])
+        int pick = arr[i];
+        if (i > 1)
+            pick += dp[i - 2];
+        int nonPick = dp[i - 1];
+        dp[i] = max(pick, nonPick);
+    }
+    return dp[n - 1];
+    }
+    int rob(vector<int>& nums) {
+           int n = nums.size();
+        if(n==0) return 0;
+        vector<int>dp(n,0);
+        return recur(n,nums,dp);
+    }
+};
+//  ####.  MEMOIZATION
+// class Solution {
+// public:
+//     int recur(int n ,vector<int>&nums,vector<int>&dp){
+//         if(n==0) return nums[0];
+//         if(n<0) return 0;
+//         if(dp[n]!=-1){
+//             return dp[n];
+//         }
+//         int maxi =-1;
+//         int pick = nums[n] + recur(n-2,nums,dp);
+//         int notpick = 0 + recur(n-1,nums,dp);
+//         // maxi = max(pick,notpick);
+//         return dp[n] = max(pick,notpick);
+//     }
+//     int rob(vector<int>& nums) {
+//         int n = nums.size();
+//         vector<int>dp(n,-1);
+//         return recur(n-1,nums,dp);
+//     }
+// };
