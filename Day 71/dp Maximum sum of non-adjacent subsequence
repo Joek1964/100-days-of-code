@@ -1,0 +1,60 @@
+https://www.naukri.com/code360/problems/maximum-sum-of-non-adjacent-elements_843261?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTabValue=SUBMISSION
+striver's is below this code do read it
+  int recur(vector<int>& nums, int n, int sum,vector<int>&dp) {
+    if(dp[n]==-1){
+         if (n <= 0) {
+        dp[n] =  sum;
+        return dp[n];
+    }
+    
+    int maxi = -1;
+     
+    // Include current element
+    int pick = nums[n-1] + recur(nums, n - 2, sum,dp);
+    int notpick =  0 + recur(nums,n-1,sum,dp);
+
+    maxi = max(pick,notpick);
+
+    // return maxi;
+    dp[n] = maxi;
+    }
+    return dp[n];
+}
+
+int maximumNonAdjacentSum(vector<int>& nums) {
+       int n = nums.size();
+    vector<int>dp(n+1,-1);
+ 
+    return recur(nums, n, 0,dp);
+}
+
+
+striver :
+  int recur(vector<int>& nums, int n, int sum, vector<int>& dp) {
+    if (n == 0) {
+        return nums[0]; // Base case when only one element left
+    }
+    if (n < 0) {
+        return 0; // Base case when no elements left
+    }
+    if (dp[n] != -1) {
+        return dp[n];
+    }
+
+    int maxi = -1;
+    
+    // Include current element
+    int pick = nums[n] + recur(nums, n - 2, sum, dp);
+    int notpick = recur(nums, n - 1, sum, dp);
+    
+    maxi = max(pick, notpick);
+
+    return dp[n] = maxi;
+}
+
+int maximumNonAdjacentSum(vector<int>& nums) {
+    int n = nums.size();
+    vector<int> dp(n, -1); // Initialize dp with -1
+    
+    return recur(nums, n-1, 0, dp);
+}
