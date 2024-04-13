@@ -1,0 +1,29 @@
+https://leetcode.com/problems/minimum-path-sum/description/
+https://www.naukri.com/code360/problems/minimum-path-sum_985349?source=youtube&campaign=striver_dp_videos&utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_dp_videos&leftPanelTabValue=PROBLEM
+class Solution {
+public:
+
+     int recur(int m,int n,vector<vector<int>>&grid,vector<vector<int>>&dp){
+        if(m==0 && n==0){
+            return grid[m][n];
+        }
+        if(m<0 || n<0){
+            return 1e9;
+        }
+        if(dp[m][n]!=0){
+            return dp[m][n];
+        }
+        int up = grid[m][n] + recur(m-1,n,grid,dp);
+        int  left = grid[m][n] +  recur(m,n-1,grid,dp);
+
+        return dp[m][n] = min(up,left);
+    }
+    int minPathSum(vector<vector<int>> &grid) {
+        // Write your code here.
+        int m = grid.size();
+        int n = grid[0].size();
+        vector<vector<int>>dp(m,vector<int>(n,0));
+        return recur(m-1,n-1,grid,dp);
+    }
+
+};
