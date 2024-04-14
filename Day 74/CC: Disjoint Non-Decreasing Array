@@ -1,0 +1,55 @@
+https://www.codechef.com/problems/DISJOINTSUB?tab=statement
+#include <bits/stdc++.h>
+using namespace std;
+void solve(){
+    int n;
+    cin>>n;
+    vector<int>vec(n);
+    for(int i =0;i<n;i++){
+        cin>>vec[i];
+    }
+    vector<bool>v(n,false);
+    int maxdiff =0;
+    // for(int i =1;i<n;i++){
+        int i =1;
+        while(i<n){
+	    if(vec[i]<vec[i-1]){
+	       // int diff = ;
+	        maxdiff = max(maxdiff,vec[i-1]-vec[i]);
+	        v[i] = true;
+	        i+=2;
+	    }
+	    else{
+	        i++;
+	    }
+	}
+	// for(auto it :v){
+	//     cout<<it<<" ";
+	// }
+	// cout<<endl;
+	// cout<<maxdiff<<"*"<<endl;
+	for(int i =0;i<n;i++){
+	    if(v[i]==true){
+	        vec[i]+=maxdiff;
+	    }
+	}
+	// for(auto it :vec){
+	//     cout<<it<<" ";
+	// }
+	// cout<<endl;
+	for(int i =0;i<n-1;i++){
+	    if(vec[i]>vec[i+1]){
+	        cout<<"No"<<endl;
+	        return;
+	    }
+	}
+	cout<<"Yes"<<endl;
+}
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        	solve();
+    }
+    return 0;
+}
