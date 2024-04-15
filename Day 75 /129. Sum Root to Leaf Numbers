@@ -1,0 +1,36 @@
+https://leetcode.com/problems/longest-palindromic-substring/submissions/1233179341/
+class Solution {
+public:
+    int sumNumbers(TreeNode* root) {
+        queue<TreeNode*>q;
+         if (!root) return 0;
+          int x =0;
+        q.push(root);
+        while(!q.empty()){
+             TreeNode* curr =q.front();
+             q.pop();
+           
+             if(!curr->left && !curr->right){
+                x += curr->val;
+             }
+            //  if(temp->left){
+            //     s+=temp->val;
+            //  temp=temp->left;
+            //  }
+
+            //  if(temp->right){
+            //     s+=temp->val;
+            //     temp =temp->right;
+            //  } 
+            if (curr->left) {
+                curr->left->val += (curr->val * 10); 
+                q.push(curr->left);
+            }
+            if (curr->right) {
+                curr->right->val += (curr->val * 10); 
+                q.push(curr->right);
+            }
+        }
+        return x;
+    }
+};
