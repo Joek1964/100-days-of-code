@@ -1,0 +1,32 @@
+#include <bits/stdc++.h> 
+    string trans(string &s){
+        string t = "";
+        for(int i =0;i<s.size();i++){
+            if((int)s[i]>=65 && (int)s[i] <= 90){
+                t += s[i] + ('a' - 'A');
+            }
+            else if(s[i] == ' '){
+                continue;
+            }
+            else if(((int)s[i] < 97 || (int)s[i] > 122) && !isdigit(s[i])){
+                continue;
+            }else{
+                t += s[i];
+            }
+        }
+        return t;
+    }
+bool checkPalindrome(string s)
+{
+    // cout<<s<<endl;
+   string st =  trans(s);
+//    cout<<st<<endl;
+    int n = st.size();
+    for(int i =0;i<n/2;i++){
+        if(st[i] != st[n-i-1]){
+            return false;
+        }
+    }
+    return true;
+    // Write your code here.
+}
