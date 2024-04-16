@@ -1,0 +1,32 @@
+https://www.geeksforgeeks.org/problems/count-subarrays-with-equal-number-of-1s-and-0s-1587115620/1
+class Solution{
+  public:
+    //Function to count subarrays with 1s and 0s.
+    long long int countSubarrWithEqualZeroAndOne(int a[], int n)
+    {
+        //Your code here
+        unordered_map<int,int>mp;
+        vector<int>pf(n);
+        for(int i =0;i<n;i++){
+            if(a[i]==0){
+                pf[i] =-1;
+            }else{
+                pf[i] = 1;
+            }
+        }
+        mp[0]=1;
+        long long count =0;
+        long long pf_sum =0;
+        for(int i =0;i<n;i++){
+            pf_sum += pf[i];
+            if(mp.find(pf_sum) != mp.end()){
+                count+= mp[pf_sum];
+                mp[pf_sum]++;
+            }
+            else{
+                mp[pf_sum]++;
+            }
+        }
+        return count;
+    }
+};
