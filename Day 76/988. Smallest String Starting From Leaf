@@ -1,0 +1,29 @@
+https://leetcode.com/problems/smallest-string-starting-from-leaf/
+class Solution {
+public:
+void recur (string &s,TreeNode* root,string &ans){
+    if(!root) return;
+
+    s.push_back(root->val + 'a');
+    if(root->left ==NULL  && root->right == NULL){
+        reverse(s.begin(),s.end());
+        // empty check is for the first leaf node encountered
+        if (ans.empty() || s < ans) {
+                ans = s;
+            }
+        reverse(s.begin(),s.end());
+    }
+    recur(s,root->left,ans);
+    recur(s,root->right,ans);
+
+    s.pop_back();
+    return;
+
+}
+    string smallestFromLeaf(TreeNode* root) {
+        string s ="";   
+        string ans = "";
+        recur(s,root,ans);
+        return ans;
+    }
+};
