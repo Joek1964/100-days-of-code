@@ -1,0 +1,18 @@
+#include <bits/stdc++.h> 
+int recur(vector<vector<int>>& a,vector<vector<int>>&dp,int n){
+	for(int j =0;j<n;j++){
+		dp[n-1][j] = a[n-1][j];
+	}
+	for(int  i =n-2;i>=0;i--){
+		for(int j =i;j>=0;j--){
+			int down = a[i][j] + dp[i+1][j];
+			int diag = a[i][j] + dp[i+1][j+1];
+			dp[i][j] = min(down,diag);
+		}
+	}
+	return dp[0][0];
+}
+int minimumPathSum(vector<vector<int>>& triangle, int n){
+	vector<vector<int>>dp(n,vector<int>(n,0));
+	return recur(triangle,dp,n);
+}
