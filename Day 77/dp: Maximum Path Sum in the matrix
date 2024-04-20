@@ -36,3 +36,47 @@ int getMaxPathSum(vector<vector<int>> &matrix) {
     // }
     return recur(matrix,dp);
 }
+
+ ################## SPACE OPTIMIZATION   #############################
+// let us do space optimization
+int recur(vector<vector<int>> &a,vector<vector<int>>&dp) {
+   int m = a.size();
+   int n=a[0].size();
+   int ans = -1e8;
+//    int prev[n];
+vector<int>prev(n,0);
+vector<int>curr(n,0);
+   for(int j=0;j<n;j++){
+    //    filling up first column
+    //    dp[0][i] = a[0][i];
+    prev[j] = a[0][j];
+   }    
+   for(int i =1;i<m;i++){
+       for(int j =0;j<n;j++){
+           int down = a[i][j] + prev[j];
+           int leftdown = -1e8;
+           int rightdown = -1e8;
+          if(j>0) leftdown = a[i][j] + prev[j-1];
+          if(j<n-1) rightdown = a[i][j] + prev[j+1];
+
+          curr[j] = max(down,max(leftdown,rightdown));
+       }
+       prev = curr;
+   }
+   for (int j = 0; j < n; j++) {
+       ans = max(ans, prev[j]);
+   }
+   return ans;
+}
+
+int getMaxPathSum(vector<vector<int>> &matrix) {
+    int ans = -1e8;
+    int m = matrix.size();
+    int n = matrix[0].size();
+    vector<vector<int>> dp(m, vector<int>(n, -1)); // Initialize dp with a distinct value
+
+    // for (int j = 0; j < n; j++) {
+    //     ans = max(ans, recur(m - 1, j, matrix,dp)); // Update ans with the maximum sum found
+    // }
+    return recur(matrix,dp);
+}
