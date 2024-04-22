@@ -1,0 +1,44 @@
+#include <vector>
+#include <climits>
+#include <algorithm>
+using namespace std;
+
+class Solution {
+public:
+    int solve(int j, int keep, vector<vector<int>>& grid, vector<vector<int>>& dp) {
+        int n = grid[0].size();
+        int mini = INT_MAX;
+        int cost = 0;
+        if (j >= n) {
+            return 0;
+        }
+        if (dp[j][keep] != -1) {
+            return dp[j][keep];
+        }
+        // calculating the cost for the first column in every row and then recur all the paths 
+        for (int i = 0; i < grid.size(); i++) {
+            if (grid[i][j] != keep) {
+                cost++;
+            }
+        }
+        for (int digits = 0; digits <= 9; digits++) {
+            if (digits == keep) continue;
+            // make digit = not same number, in the row for next recur
+            mini = min(mini, cost + solve(j + 1, digits, grid, dp));
+        }
+
+        return dp[j][keep] = mini;
+    }
+
+    int minimumOperations(vector<vector<int>>& grid) {
+        int m = grid[0].size();
+        vector<vector<int>> dp(m, vector<int>(10, -1)); // dp[col][value]
+        int ans = INT_MAX;
+        // exploring all the cases of first column itself
+        for (int i = 0; i < 10; i++) {
+            // keep initially begins from i =0 and explores all paths
+            ans = min(ans, solve(0, i, grid, dp));
+        }
+        return ans;
+    }
+};
