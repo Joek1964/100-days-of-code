@@ -1,27 +1,39 @@
 https://www.naukri.com/code360/problems/partition-equal-subset-sum-_892980?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
-#include <bits/stdc++.h>
 bool f(int n, int target, vector<int> &arr, vector<vector<bool>>& dp) {
     for(int i = 0; i < n; i++) {
         dp[i][0] = true;
     }
+	if(arr[0]<=target)
     dp[0][arr[0]] = true;
 
     for(int i = 1; i < n; i++) {
         for (int j = 1; j <= target; j++) {
-            bool nottake = dp[i - 1][j];
-            bool take = false;
-            if (arr[i] <= j)
-                take = dp[i - 1][j - arr[i]];
-            dp[i][j] = nottake || take;
+          bool nottake = dp[i - 1][j];
+          bool take = false;
+          if (arr[i] <= j)
+            take = dp[i - 1][j - arr[i]];
+
+          dp[i][j] = nottake | take;
         }
     }
     // Return the result from the last cell
-    return dp[n-1][target];
+    return dp[n - 1][target];
 }
+bool canPartition(vector<int> &arr, int n)
+{
+    int target = 0;
+    for (int i = 0; i < n; i++) {
+        target += arr[i];
+    }
 
+    // If the sum is odd, it cannot be partitioned into two equal subsets
+    if (target % 2 != 0) {
+        return false;
+    }
 
-bool subsetSumToK(int n, int k, vector<int> &arr) {
-  
-  vector<vector<bool>>dp(n+1,vector<bool>(k+1,false));
-    return f(n,k,arr,dp);
+    target = target / 2;
+	// we need to find the half sum xif we found that means that one subset of half sum exists then other subsset will also exist
+	vector<vector<bool>>dp(n,vector<bool>(target+1,false));
+	return f(n,target,arr,dp);
+
 }
