@@ -1,0 +1,39 @@
+https://leetcode.com/problems/flood-fill/
+
+class Solution {
+public:
+void recur(int i,int j,vector<vector<int>>&image,vector<vector<bool>>&visited,int color,int old,int m,int n){
+        if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j] || image[i][j] != old) {
+            return;
+        }
+        visited[i][j]= true;
+        image[i][j] = color;
+
+    // if(i+1<m && visited[i][j]!=true && image[i][j] == old){
+    //     image[i][j] =color;
+        recur(i+1,j,image,visited,color,old,m,n);
+    // }
+        // if(i-1>=0 && visited[i][j]!=true&& image[i][j] == old){
+        // image[i][j] =color;
+        recur(i-1,j,image,visited,color,old,m,n);
+    // }
+        // if(j+1<n && visited[i][j]!=true && image[i][j] == old){
+        // image[i][j] =color;
+        recur(i,j-1,image,visited,color,old,m,n);
+    // }
+        // if(j-1>=0 && visited[i][j]!= true&& image[i][j] == old){
+        // image[i][j] =color;
+        recur(i,j+1,image,visited,color,old,m,n);
+    // }
+    // visited[i][j] = false;
+
+}
+    vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
+        int old = image[sr][sc];
+        int m = image.size();
+        int n = image[0].size();
+        vector<vector<bool>>visited(m,vector<bool>(n,0));
+        recur(sr,sc,image,visited,color,old,m,n);
+        return image;
+    }
+};
