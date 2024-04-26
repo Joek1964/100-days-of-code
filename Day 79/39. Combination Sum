@@ -1,0 +1,29 @@
+class Solution {
+public:
+    void recur(int i, vector<int>& candidates, vector<bool>& visited, int target, vector<int>& combination, vector<vector<int>>& ans) {
+        if (i < 0 || target < 0) {
+            return;
+        }
+        
+        if (target == 0) {
+            ans.push_back(combination);
+            return;
+        }
+
+        visited[i] = true;
+        combination.push_back(candidates[i]);
+        recur(i, candidates, visited, target - candidates[i], combination, ans); // Include current element
+        combination.pop_back(); // Backtrack
+        visited[i] = false;
+        recur(i - 1, candidates, visited, target, combination, ans); // Exclude current element
+    }
+    
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        int n = candidates.size();
+        vector<bool> visited(n, false);
+        vector<vector<int>> ans;
+        vector<int> combination;
+        recur(n - 1, candidates, visited, target, combination, ans);
+        return ans;
+    }
+};
