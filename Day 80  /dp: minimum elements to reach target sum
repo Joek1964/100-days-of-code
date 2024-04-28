@@ -1,0 +1,48 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <limits>
+
+using namespace std;
+
+class Solution {
+public:
+    int recur(int i, vector<int>& arr, int target,vector<vector<int>>&dp) {
+        if (i < 0) {
+            return (target == 0) ? 0: 1e8; // Return a large value if target cannot be achieved
+        }
+        if(dp[i][target] !=-1){
+            return dp[i][target];
+        }
+
+        // Include current element
+        int take = 1e8l;
+        if (arr[i] <= target) {
+            take = 1 + recur(i, arr, target - arr[i],dp);
+        }
+        int nottake = recur(i - 1, arr, target,dp);
+
+        return dp[i][target] = min(take, nottake);
+    }
+
+    int minimumElements(vector<int>& num, int x) {
+        vector<vector<int>>dp(num.size(),vector<int>(x+1,-1));
+        
+        int n = num.size();
+        return recur(n - 1, num, x,dp);
+    }
+};
+
+int main() {
+    Solution solution;
+
+    // Example input
+    vector<int> nums = {1, 2, 3};
+    int target = 5;
+
+    int minElements = solution.minimumElements(nums, target);
+
+    cout << "Minimum elements needed to reach target sum: " << minElements << endl;
+
+    return 0;
+}
