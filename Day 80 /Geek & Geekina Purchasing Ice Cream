@@ -1,0 +1,14 @@
+did upsolve couldnt think optimised version
+class Solution {
+  public:
+    long long findGoodPairs(vector<int> a, int n, int k) {
+        long long ans=0;
+        unordered_map<int,int> m;
+        for(int i=k; i<n; i++){
+            m[a[i-k]]++;
+            ans+=m[a[i]];
+        }
+        return ans;
+    }
+    //very bautiful problem;
+};
