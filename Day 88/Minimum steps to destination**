@@ -1,0 +1,14 @@
+@maskcoder also try dp optimise approach
+class Solution{
+public:
+        int minSteps(int d) {
+        // / code here
+        d=abs(d);
+            int sum=0, step=0; 
+            while (sum<d || abs (sum-d)%2!=0){
+                step++;
+                sum+=step;
+            }
+        return step;
+        }
+    };
