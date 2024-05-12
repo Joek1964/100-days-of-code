@@ -1,0 +1,53 @@
+class Solution {
+public:
+    bool isvalid(int i,int j,vector<vector<char>>&s,int n){
+        int x =i;
+        int y =j;
+        while(i<n && j>=0){
+            if(s[i][j]=='Q')return false;
+            i++;
+            j--;
+        }
+        i=x;
+        j=y;
+        while(i>=0 && j>=0){
+            if(s[i][j]=='Q')return false;
+            i--;
+            j--;
+        }
+        i=x;
+        j=y;
+        while(j>=0){
+            if(s[i][j]=='Q')return false;
+            j--;
+        }
+        return true;
+    }
+    void solve(int j,vector<vector<char>>&s,vector<vector<string>>&ans,int n){
+        if(j>=n){
+            vector<string>v;;
+            for(int i=0;i<n;i++){
+                string k ="";
+                for(int j =0;j<n;j++){
+                    k.push_back(s[i][j]);
+                }
+                v.push_back(k);
+            }
+            ans.push_back(v);
+            return;
+        }
+        for(int i=0;i<n;i++){
+            if(isvalid(i,j,s,n)){
+                s[i][j]='Q';
+                solve(j+1,s,ans,n);
+                s[i][j]='.';
+            }
+        }
+    }
+    vector<vector<string>> solveNQueens(int n) {
+        vector<vector<string>>ans;
+        vector<vector<char>>s(n,vector<char>(n,'.'));
+        solve(0,s,ans,n);
+        return ans;
+    }
+};
