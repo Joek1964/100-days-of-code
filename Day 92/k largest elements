@@ -1,0 +1,20 @@
+https://www.geeksforgeeks.org/problems/k-largest-elements4206/1
+
+
+class Solution{
+public:	
+	vector<int> kLargest(int a[], int n, int k) {
+	    // code herev
+	    vector<int>v;
+	    priority_queue<int> pq;
+	    
+	    for(int i =0;i<n;i++){
+	        pq.push(a[i]);
+	    }
+	    while(!pq.empty() &&k--){
+	        int it = pq.top();
+	        pq.pop();
+	        v.push_back(it);
+	    }
+	    return v;
+	}
