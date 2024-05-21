@@ -1,0 +1,47 @@
+https://www.geeksforgeeks.org/problems/minimum-number-of-deletions-and-insertions0209/1
+class Solution{
+		
+
+	public:
+	   int recur(int n,int m,string &s1,string&s2,vector<vector<int>>&dp){
+        // dp[n][m]=0;
+        for(int i =0;i<=n;i++){
+            dp[i][m]=0;
+        }
+        for(int j =0;j<=m;j++){
+            dp[n][j]=0;
+        }
+        for(int i =1;i<=n;i++){
+            for(int j =1;j<=m;j++){
+                if(s1[i-1]==s2[j-1]){
+                    dp[i][j] =1+dp[i-1][j-1];
+                }
+                else{
+                    dp[i][j] = max(dp[i-1][j],dp[i][j-1]);
+                }
+            }
+        }
+        return dp[n][m];
+
+    }
+    int lcs(int n, int m, string s1, string s2)
+    {
+        // your code here
+        vector<vector<int>>v(n+1,vector<int>(m+1));
+        return recur(n,m,s1,s2,v);
+      
+        // return max(ans,ans1);
+    }
+	int minOperations(string str1, string str2) 
+	{ 
+	    // Your code goes here
+	    int n = str1.size();
+	    int m = str2.size();
+	    int longest_cmon = lcs(n,m,str1,str2);
+	    
+	    int deletion = n-longest_cmon;
+	    int insertion = m-longest_cmon;
+	    return insertion+deletion;
+	    
+	} 
+};
