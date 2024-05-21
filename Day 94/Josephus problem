@@ -1,0 +1,59 @@
+https://www.geeksforgeeks.org/problems/josephus-problem/1
+class Solution {
+public:
+    int josephus(int n, int k) {
+        int boolcount = 0;
+        int count = 0;
+        vector<bool> v(n, false);
+        int i = 0;
+
+        while (boolcount < n - 1) { // Loop until only one person is left
+            if (!v[i]) { // If person i is still in the game
+                count++;
+                if (count == k) { // If k-th person is found
+                    v[i] = true; // Mark person i as eliminated
+                    boolcount++;
+                    count = 0; // Reset count
+                }
+            }
+            i = (i + 1) % n; // Move to the next person in the circle
+        }
+
+        // Find the last remaining person
+        for (i = 0; i < n; i++) {
+            if (!v[i]) {
+                return i + 1; // Return 1-based index
+            }
+        }
+
+        return -1; // Error case (should never reach here if n > 0)
+    }
+};
+// class Solution
+// {
+//     public:
+//     int josephus(int n, int k)
+//     {
+//         int boolcount =0;
+//         int count=0;
+//         vector<bool>v(n,false);
+//         for(int i =0;i<2*n;i++){
+//             if(i>=n){
+//                 i=n%i;
+//             }
+//             if(v[i]!=false){
+                
+//                 count++;
+//                 if(boolcount==n){
+//                     return i;
+//                 }
+//             }
+//             if(count==k){
+//                 boolcount++;
+//                 v[i]==true;
+//                 count=0;
+//             }
+//         }
+//       //Your code here
+//     }
+// };
