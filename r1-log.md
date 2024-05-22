@@ -1,8 +1,7 @@
-# #100DaysOfCode Log - Round 1 - [Marvin Ogot]
+# #100DaysOfCode LOG - Round 1
 
-## The log of my #100DaysOfCode challenge. Started on [May 20, Monday, 2024].
-
-## Log
+## Name: [Marvin Ogot]
+## Date started: [May 20, Monday, 2024]
 
 ### R1D1 
 Switched from flask-login to jwt-manager to enable local data storage and cookies for use with #react front end.
