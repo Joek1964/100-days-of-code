@@ -1,6 +1,6 @@
 # #100DaysOfCode Log - Round 1 - [Marvin Ogot]
 
-The log of my #100DaysOfCode challenge. Started on [May 20, Monday, 2024].
+## The log of my #100DaysOfCode challenge. Started on [May 20, Monday, 2024].
 
 ## Log
 
