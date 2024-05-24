@@ -1,10 +1,20 @@
-# #100DaysOfCode Log - Round 1 - [Your Name Here]
+# #100DaysOfCode
+# Round 1 - LOG
 
-The log of my #100DaysOfCode challenge. Started on [July 17, Monday, 2017].
-
-## Log
+## Name: Marvin Ogot
+## Date started: May 20, Monday, 2024
 
 ### R1D1 
-Started a Weather App. Worked on the draft layout of the app, struggled with OpenWeather API http://www.example.com
+Switched from flask-login to jwt-manager to enable local data storage and cookies for use with #react front end.
+<br>
+Link: https://github.com/marv0/farmart-ecommerce
 
 ### R1D2
+Redefined animal models which in turn modified animal table to hold images.
+<br>
+Link: https://github.com/marv0/farmart-ecommerce
+
+### R1D3
+Had a few recursion bugs when fetching data on my order routes. Refined my models (how I implemented SerializerMixin) and manually excluded fields that were causing recursion errors.
+<br>
+Link: https://github.com/marv0/farmart-ecommerce
