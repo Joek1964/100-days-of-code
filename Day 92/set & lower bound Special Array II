@@ -1,0 +1,26 @@
+https://leetcode.com/problems/special-array-ii/description/
+
+class Solution {
+public:
+    vector<bool> isArraySpecial(vector<int>& nums, vector<vector<int>>& queries) {
+        vector<bool>ans;
+        set<int>s;
+        for(int j =0;j<nums.size()-1;j++){
+             if(nums[j]%2 == nums[j+1]%2){
+                    s.insert(j);
+                }
+        }
+        for(auto q : queries){
+            auto it = s.lower_bound(q[0]);
+            // if((*it)>=q[1]).  this means the lower bound is out of the l ...r range of querey
+            // and it==s.end() tells if index is present in l...r  which is faulty
+            if((*it)>=q[1] || it==s.end()){
+                ans.push_back(true);
+            }
+            else{
+                ans.push_back(false);
+            }
+        }
+        return ans;
+    }
+};

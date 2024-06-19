@@ -1,0 +1,22 @@
+#include <string>
+#include <unordered_map>
+
+using namespace std;
+
+class Solution {
+public:
+    bool repeatedSubstringPattern(string s) {
+        int n = s.size();
+        unordered_map<string, int> mp; 
+        for (int j = n / 2; j > 0; j--) {
+            if (n % j == 0) {
+                int i = 0;
+                string substring = s.substr(0, j); 
+                while (i + j <= n && s.substr(i, j) == substring) i += j; 
+                // basically yaha i is increasing be a sliding window of j size where j has ti be even number
+                if (i == n) return true; 
+            }
+        }
+        return false;
+    }
+};

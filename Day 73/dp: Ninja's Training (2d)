@@ -1,0 +1,33 @@
+https://www.naukri.com/code360/problems/ninja%E2%80%99s-training_3621003?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
+int recur(int day,vector<vector<int>> &points,int last,vector<vector<int>> &dp){
+    if(day==0){
+        // we gotta return maxi value
+        int maxi=-1;
+        for(int i =0;i<3;i++){
+            if(i!=last){
+            maxi = max(maxi,points[day][i]);
+            }
+        }
+        return maxi;
+    }
+    if(dp[day][last]!=-1){
+        return dp[day][last];
+    }
+    int maxim =-1;
+    for(int i =0;i<3;i++){
+        if(i!=last){
+            int curent_points = points[day][i] + recur(day-1,points,i,dp);
+           maxim = max(maxim,curent_points);    
+        }
+      
+    }
+    dp[day][last] = maxim;
+    return maxim;
+}
+int ninjaTraining(int n, vector<vector<int>> &points)
+{
+    // Write your code here.
+    vector<vector<int>>dp(n,vector<int>(4,-1));
+    return recur(n-1,points,3,dp);
+
+}

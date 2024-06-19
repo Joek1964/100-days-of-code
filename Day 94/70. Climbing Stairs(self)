@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int recur(int n,int &count,vector<int>&dp){
+        dp[0]=1;
+        int a1 =0;
+        int a2 =0;
+        for(int i =1;i<=n;i++){
+            a1 = dp[i-1];
+            if(i-2>=0){
+                a2 = dp[i-2];
+            }
+            dp[i]=a1+a2;
+        }
+        return dp[n];
+    }
+    int climbStairs(int n) {
+        int count =0;
+        vector<int>dp(n+1,-1);
+         return recur(n,count,dp);
+    }
+};

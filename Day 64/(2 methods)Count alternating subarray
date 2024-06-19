@@ -1,0 +1,53 @@
+https://leetcode.com/contest/weekly-contest-391/problems/count-alternating-subarrays/
+// class Solution {
+// public:
+//     long long countAlternatingSubarrays(vector<int>& nums) {
+//         long long ans =0;
+//         int n = nums.size();
+//         // for(int i =0;i<n-1;i++){
+//         //     if(nums[i]!=nums[i+1]){
+//         //         ans += n-i;
+//         //     }
+//         // }
+//         // return ans+1;
+//         for (int i = 0; i < n; i++) {
+//             int j = i;
+//             while (j < n - 1 && nums[j] != nums[j + 1]) {
+//                 j++;
+//             }
+//             ans += static_cast<long long>(j - i+ 1)* (j-i+ 2) / 2;
+
+//             i = j;
+//         }
+//         return ans;
+//     }
+// };
+#include <vector>
+using namespace std;
+
+class Solution {
+public:
+    long long countAlternatingSubarrays(vector<int>& nums) {
+        int n = nums.size();
+        
+        // Initialize the prefix sum array with all elements as 1
+        vector<long long> prefix_sum(n, 1);
+        
+        // Traverse the input array and update the prefix sum array
+        for (int i = 1; i < n; ++i) {
+            if (nums[i] != nums[i - 1]) {
+                // If the current element is different from the previous one,
+                // update the prefix sum with the count of alternating subarrays
+                prefix_sum[i] = prefix_sum[i - 1] + 1;
+            }
+        }
+        
+        // Sum up the elements of the prefix sum array to get the total count of alternating subarrays
+        long long ans = 0;
+        for (int i = 0; i < n; ++i) {
+            ans += prefix_sum[i];
+        }
+        
+        return ans;
+    }
+};

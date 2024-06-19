@@ -1,0 +1,40 @@
+class Solution {
+public:
+    int solve(int m, int n,vector<vector<char>>& matrix,vector<vector<int>>&dp){
+        if(m<0 || n<0){
+            return 0;
+        }
+        if(dp[m][n]!=-1){
+            return dp[m][n];
+        }
+
+        if(matrix[m][n]=='1'){
+            int size = 1 + min({solve(m - 1, n - 1, matrix, dp),
+                                solve(m - 1, n, matrix, dp),
+                                solve(m, n - 1, matrix, dp)});
+                dp[m][n] = size;
+                return size;
+        }
+        else{
+            dp[m][n] = 0;
+            return 0;
+        }
+
+    }
+    int maximalSquare(vector<vector<char>>& matrix) {
+        // recursize solution
+        int ans =0;
+        int m = matrix.size();
+        int n = matrix[0].size();
+        vector<vector<int>>dp(m,vector<int>(n,-1));
+        int maxSquare = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matrix[i][j] == '1') {
+                    maxSquare = max(maxSquare, solve(i, j, matrix, dp));
+                }
+            }
+        }
+        return maxSquare * maxSquare;
+    }
+};

@@ -1,0 +1,32 @@
+class Solution {
+public:
+    vector<int> splitstring(string &s,char delimeter){
+         int start =0;
+        int end = s.find(delimeter,start);
+        vector<int>result;
+        while(end!=string::npos){
+            // mean while the delimeter is there in the string
+            string ans = s.substr(start,end-start);
+            result.push_back(stoi(ans));
+            start = end+1;
+            end = s.find(delimeter,start);
+        }
+        // end = s.find(delimeter,start)
+        string ans= s.substr(start,end-start);
+        result.push_back(stoi(ans));
+        return result;
+    }
+    int compareVersion(string version1, string version2) {
+       vector<int>v1 = splitstring(version1,'.');
+       vector<int>v2 = splitstring(version2,'.');
+        int n = max(v1.size(),v2.size());
+        for(int i =0;i<n;i++){
+            int val1 = i<v1.size() ? v1[i] : 0;
+            int val2 = i<v2.size() ? v2[i] : 0;
+
+            if(val1<val2)return -1;
+            else if(val1>val2)return 1;
+        }
+        return 0;
+    }
+};

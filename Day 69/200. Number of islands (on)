@@ -1,0 +1,94 @@
+https://leetcode.com/problems/number-of-islands/?envType=list&envId=zu4yeys
+//try to use variety if || not wortking try to solve() only when in the bounds,loook below code also once to learn from mistake
+//congo for doing this o yr own btw
+class Solution {
+public:
+    vector<int> dx = {0, 0, -1, 1};
+    vector<int> dy = {-1, 1, 0, 0};
+    int count = 0;
+
+    int traverse(vector<vector<int>>& visited, vector<vector<char>>& grid) {
+        for (int i = 0; i < visited.size(); i++) {
+            for (int j = 0; j < visited[0].size(); j++) {
+                if (visited[i][j] == false && grid[i][j] == '1') {
+                    if (solve(visited, grid, i, j) == true) {
+                        count++;
+                    }
+                }
+            }
+        }
+        return count;
+    }
+
+    bool solve(vector<vector<int>>& visited, vector<vector<char>>& a, int i, int j) {
+        if (a[i][j] == '0' || visited[i][j] == true) {
+            return false;
+        }
+        visited[i][j] = true;
+        for (int k = 0; k < 4; k++) {
+            int x = dx[k] + i;
+            int y = dy[k] + j;
+            if (x >= 0 && x < visited.size() && y >= 0 && y < visited[0].size()) {
+                if (solve(visited, a, x, y) == false) {
+                    continue;
+                }
+            }
+        }
+        return true;
+    }
+
+    int numIslands(vector<vector<char>>& grid) {
+        int m = grid.size();
+        int n = grid[0].size();
+        vector<vector<int>> visited(m, vector<int>(n, 0));
+
+        int ans = traverse(visited, grid);
+        return ans;
+    }
+};
+
+// class Solution {
+// public:
+//     vector<int>dx = {0,0,-1,1};
+//     vector<int>dy = {-1,1,0,0};
+//     vector<vector<int>>visited;
+//     int count=0;
+//     int traverse(vector<vector<int>>&visited,vector<vector<int>>&grid){
+//         for(int i =0;i<visited.size();i++){
+//             for(int j =0;j<visited[0].size();j++){
+//                 if(visited[i][j]==false && grid[i][j] ==1 ){
+//                     if(solve(visited,grid,i,j)==true){
+//                         count++;
+//                     }
+//                 }
+//             }
+//         }
+//         return count;
+//     }
+//     bool solve(vector<vector<int>>visited,vector<vector<char>>a,int i,int j){
+//         if(a[i-1][j]==0 || a[i+1][j]==0 || a[i][j-1]==0 || a[i][j+1]==0 ||visited[i][j]==true){
+//             return false;
+//         }
+//         visited[i][j]==true;
+//         for(int k =0;k<4;k++){
+//             int x = dx[k] + i;
+//             int y = dy[k] + j;
+//             if(solve(visited,a,count,x,y)==false){
+//                 continue;
+//             }
+//         }
+//         return true;
+//     }
+//     int numIslands(vector<vector<char>>& grid) {
+//         int m = grid.size();
+//         int n = grid[0].size();
+//         vector<vector<int>>visited(m+2,vector<int>(0,n+2));
+//         for(int i =0;i<m;i++){
+//             for(int j = 0;j<n;j++){
+//                 visited[i+1][j+1] =grid[i][j];
+//             }
+//         }
+//         int ans = traverse(visited,grid);
+//         return ans;
+//     }
+// };

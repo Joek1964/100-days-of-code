@@ -1,0 +1,27 @@
+class Solution {
+public:
+    long long countSubarrays(vector<int>& nums, int k) {
+        int n = nums.size();
+        unordered_map<int,int>mp;
+        int j=0,i=0;
+        long long ans = 0;
+        long long maxi = nums[0];
+        for(auto it :nums){
+            if(it>maxi){
+                maxi =it;
+            }
+        }
+        while(j<n){
+            mp[nums[j]]++;
+            // calculated ans here because cond satisying inside loop
+                while(i<=j && mp[maxi]>=k){
+                    ans+=(n-j);
+// winows of sizes n-j will satisfy this cond irrespective of them containing maxi or not
+                    mp[nums[i]]--;
+                    i++;
+                }
+            j++;
+        }
+        return ans;
+    }
+};

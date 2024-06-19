@@ -1,0 +1,37 @@
+https://www.geeksforgeeks.org/problems/aggressive-cows/1?page=1&category=Binary%20Search&sortBy=submissions
+similar to :
+https://leetcode.com/problems/magnetic-force-between-two-balls/description/
+class Solution {
+public:
+
+    void bs(int l,int r,int k,int n,vector<int>&stalls,int &ans){
+        if(l<=r){
+            int m = l+(r-l)/2;
+            int c =1;
+            int prev = stalls[0];
+            for(int i =1;i<n;i++){
+                if(stalls[i]-prev>=m){
+                    c++;
+                    prev = stalls[i];
+                }
+            }
+            if(c>=k){
+                ans=m;
+                bs(m+1,r,k,n,stalls,ans);
+            }
+            else{
+                bs(l,m-1,k,n,stalls,ans);
+            }
+            
+        }
+        
+    }
+    int solve(int n, int k, vector<int> &stalls) {
+    
+        // Write your code here
+        int ans =0;
+        sort(stalls.begin(),stalls.end());
+        bs(0,1000000009,k,n,stalls,ans);
+        return ans;
+    }
+};

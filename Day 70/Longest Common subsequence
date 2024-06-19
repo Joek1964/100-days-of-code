@@ -1,0 +1,31 @@
+https://www.geeksforgeeks.org/problems/longest-common-subsequence-1587115620/1
+
+https://leetcode.com/problems/longest-common-subsequence/
+
+class Solution {
+public:
+    int recur(string s1,string s2,int m ,int n,vector<vector<int>>&dp){
+        if(dp[m][n]== -1){
+            // return dp[m][n];
+            // write base case first
+            if(m==0 || n==0){
+                dp[m][n] =0;
+            }
+            else{
+                if(s1[m-1]==s2[n-1]){
+                    dp[m][n] = 1+recur(s1,s2,m-1,n-1,dp);
+                }
+                else{
+                    dp[m][n] = max(recur(s1,s2,m,n-1,dp),recur(s1,s2,m-1,n,dp));
+                }
+            }
+        }
+        return dp[m][n];
+    }
+    int longestCommonSubsequence(string text1, string text2) {
+        int m = text1.size();
+        int n = text2.size();
+        vector<vector<int>>dp(m+1,vector<int>(n+1,-1));
+        return recur(text1,text2,m,n,dp);
+    }
+};

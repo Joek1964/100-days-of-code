@@ -1,0 +1,22 @@
+https://leetcode.com/contest/weekly-contest-396/problems/minimum-number-of-operations-to-make-word-k-periodic/
+
+class Solution {
+public:
+    int minimumOperationsToMakeKPeriodic(string word, int k) {
+        int n = word.size();
+        unordered_map<string,int>mp;
+        for(int i =0;i<n;i+=k){
+            string x = word.substr(i,k);
+            mp[x]++;
+        }
+        int maxi =-1;
+        for(auto it:mp){
+            if(it.second>=maxi){
+                maxi = it.second;
+            }
+        }
+        int z = n/k;
+        int ans = z-maxi;
+        return ans;
+    }
+};

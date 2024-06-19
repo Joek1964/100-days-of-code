@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class Solution {
+public:
+    const long long MOD = 1e9 + 7;
+
+    long long power(long long x, long long y) {
+        if (y == 0) return 1;
+        long long ans = power(x, y / 2);
+        ans = (ans * ans) % MOD;
+        if (y % 2 == 1) {
+            ans = (ans * x) % MOD;
+        }
+        return ans;
+    }
+
+    int countGoodNumbers(long long n) {
+        long long odd = n / 2;
+        long long even = n / 2 + n % 2;
+        return (power(5, even) * power(4, odd)) % MOD;
+    }
+};
+
+int main() {
+    Solution sol;
+    long long n;
+    cout << "Enter the value of n: ";
+    cin >> n;
+    int result = sol.countGoodNumbers(n);
+    cout << "The number of good numbers of length " << n << " is: " << result << endl;
+    return 0;
+}

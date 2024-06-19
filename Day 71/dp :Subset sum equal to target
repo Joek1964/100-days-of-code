@@ -1,0 +1,37 @@
+https://www.naukri.com/code360/problems/subset-sum-equal-to-k_1550954?leftPanelTabValue=PROBLEM&customSource=studio_nav
+#include <bits/stdc++.h>
+bool f(int n, int target, vector<int> &arr, vector<vector<int>>& dp) {
+    // Missing header file
+    // Add #include <vector>
+
+    if (dp[n][target] == -1) {
+        if (target == 0) return true;
+        if (n == 0) {
+            // Assignment instead of comparison
+            // Change if(arr[0]=target) to if(arr[0]==target)
+            if (arr[0] == target) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        bool nottake = f(n - 1, target, arr, dp);
+
+        bool take = false;
+        if (arr[n] <= target)
+            take = f(n - 1, target - arr[n], arr, dp);
+
+        // Returning uninitialized value
+        // You need to return nottake || take here
+        return dp[n][target] = nottake || take;
+    }
+    // Returning uninitialized value
+    // You need to return dp[n][target] here
+    return dp[n][target];
+}
+
+bool subsetSumToK(int n, int k, vector<int> &arr) {
+  
+  vector<vector<int>>dp(n+1,vector<int>(k+1,-1));
+    return f(n,k,arr,dp);
+}
