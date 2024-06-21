@@ -1,0 +1,2 @@
+# Day 1
+Installations of node js (Javascript Runtime Environment), Adding React Developer Tools as Chrome extension as well as creating react-app, adding some Visual studio code extensions for react (ES7 React/Redux/GraphQL/React-Native snippets), setting Vs code emmet ("javascript": "javascript").
