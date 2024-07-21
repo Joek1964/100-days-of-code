@@ -1,0 +1,15 @@
+# Program to calculate the area of a rectangle
+
+# Function to calculate area
+def calculate_area(length, width):
+    return length * width
+
+# Taking user input
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+
+# Calculating area
+area = calculate_area(length, width)
+
+# Printing the area
+print(f"The area of the rectangle is: {area}")
