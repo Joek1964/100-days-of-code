@@ -1,0 +1,95 @@
+#nested loops = The inner loop will finish all of it's iterations before finishing one iteration of the "outer loop"
+"""
+rows = int(input("How many rows?: "))
+columns = int(input("How many columns?: "))
+symbol = input("Enter a symbol to use ")
+
+for i in range(rows):
+    for j in range(columns):
+        print(symbol,end="")
+    print()
+    #loop Control statements = change a loops execution from its normal sequence
+
+    #break = used to terminate the loop entirely
+    #continue = skips to the next iteration of the loop
+    #pass = does nothing , acts as a placeholder
+
+while True:
+        name = input("Enter your name:")
+        if name != "":
+            break
+
+
+phone_number = "123-456-7890 "
+
+for i in phone_number:
+    for i in phone_number:
+        if i =="-":
+            continue
+        print(i,end="")
+
+for i in range(1,21+1):
+    if i ==13:
+        pass
+    else:
+        print(i)
+
+#lists = used to store multiple items in a single variable
+
+food = ["pizza","hamburger","sumbi","chicken","beans"]
+print(food)
+#replacing a member of the list
+#food[1]= "ovacado"
+print(food[1])
+food.append("ice_cream")#adding at the end of the list
+food.remove("hamburger")#removing an element from the list
+food.pop()#removes the last element
+food.insert(0,"cake")#places it in the index you want
+food.sort()#arranges in alphabetical order
+
+
+for x in food:
+    print(x)
+
+# 2D lists = a list of lists
+
+drinks = ["coffee","soda","tea"]
+dinner =["pizza","chicken","pilau"]
+dessert = ["cake","banana"]
+
+food =[drinks,dinner,dessert]
+print(food[2][0])
+
+#tuple = collection which is ordered and unchangeable used to group together related data
+
+student = ("musheija",30,"male")
+print(student.count("male"))
+print(student.index("male"))
+
+
+#set = collection which is unordered,unindexed.No duplicate
+
+city = {"london","dubai","miami"}
+cars ={"london","benz","ford"}
+
+#cars.add("volvo")
+#cars.remove("london")
+#city.clear()
+#city.update(cars)
+#max = city.union(cars)
+#for i in cars:
+    #print(i)
+print(cars.difference(city))
+print(cars.intersection(city))
+"""
+
+#dictionary = A changeable ,unordered collection of unique key:value pairs
+#Fast because they use hashing,allow us to access a value quickly
+
+capitals = {"USA":"Washington DC","India":"Mumbai","uganda":"Kampala"}
+print(capitals["USA"])
+print(capitals.get("uganda"))
+print(capitals.get("china"))
+print(capitals.keys())
+print(capitals.items())
+print(capitals.values())
