@@ -8,7 +8,7 @@
 
 **Thoughts:** I just want attain mastery in javascript by coding every single day. No cheat at all.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:** https://github.com/vinceEmeka/js-crashcourse
 
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
