@@ -10,6 +10,21 @@
 
 **Link to work:** https://github.com/vinceEmeka/js-crashcourse
 
+### Day 1: Friday August 2, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+- learnt how to access elements in an array, used mutating array such as .push and non-mutating  
+  array methods such as .filter and .map on an array.
+- learnt how to store multiple properties in a single variable with the use of Objects
+- DOM: learnt how to get html elements, how to change them. Used onclick eventlistenr on a button as well as changed the class of an html element
+
+**Thoughts:** I just want attain mastery in javascript by coding every single day. No cheat at all.
+
+**Link to work:** https://github.com/vinceEmeka/js-crashcourse
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
