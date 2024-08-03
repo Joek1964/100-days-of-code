@@ -10,7 +10,7 @@
 
 **Link to work:** https://github.com/vinceEmeka/js-crashcourse
 
-### Day 1: Friday August 2, 2024
+### Day 2: Friday August 2, 2024
 
 ##### (delete me or comment me out)
 
@@ -22,6 +22,19 @@
 - DOM: learnt how to get html elements, how to change them. Used onclick eventlistenr on a button as well as changed the class of an html element
 
 **Thoughts:** I just want attain mastery in javascript by coding every single day. No cheat at all.
+
+**Link to work:** https://github.com/vinceEmeka/js-crashcourse
+
+### Day 3: Saturday August 3, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+-I learnt about Javascript in-built Objects(JSON & localStorage) - .JSON which is used to send data between computers and to store data.
+-I also learnt about javascript auto-boxing feature where javascript wraps other data-types in a box making them special objects.
+
+**Thoughts:** Omo! today had a alot of friction. I honestly just wanted to do something else asides coding. But when I eventually started I locked in! Still trying to assimilate the basics of javascript.
 
 **Link to work:** https://github.com/vinceEmeka/js-crashcourse
 
