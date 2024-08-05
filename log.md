@@ -51,6 +51,19 @@ Worked on making changes on the class names of elements using a javascript objec
 
 **Link to work:** https://github.com/vinceEmeka/lesson-10-challenge.git
 
+### Day 5: Monday August 5, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+-I modified a simple calculator project I did a while ago, by making the calculations now display on the browser instead of displaying on the console.
+-I also created a few buttons that turn ON/OFF when clicked by adding and removing class names.
+
+**Thoughts:** I'm certainly getting better!
+
+**Link to work:** https://github.com/vinceEmeka/apple-calculator.git
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
