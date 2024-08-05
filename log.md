@@ -38,6 +38,19 @@
 
 **Link to work:** https://github.com/vinceEmeka/js-crashcourse
 
+### Day 4: Sunday August 4, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+Worked on making changes on the class names of elements using a javascript object called classList
+-I used a javascript function to check if an element has a certain class(classList.contains) & to decide whether to add or remove the class when clicked.
+
+**Thoughts:** Omo! was another tough day... i was completed exhausted. But i did it tired!
+
+**Link to work:** https://github.com/vinceEmeka/lesson-10-challenge.git
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
