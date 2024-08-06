@@ -64,6 +64,19 @@ Worked on making changes on the class names of elements using a javascript objec
 
 **Link to work:** https://github.com/vinceEmeka/apple-calculator.git
 
+### Day 6: Tuesday August 6, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+Day 06 #100DaysOfCode  
+-I started out today looping through arrays and making changes on the HTML with array method .push... also used an accumulator pattern on the arrays I looped through to create a new array from an already existing array
+-I also cloned facebook login page
+
+**Thoughts:** I'm certainly getting better!
+
+**Link to work:** https://vinceemeka.github.io/clone-facebook-login-page/
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
