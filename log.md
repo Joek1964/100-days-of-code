@@ -77,6 +77,19 @@ Day 06 #100DaysOfCode
 
 **Link to work:** https://vinceemeka.github.io/clone-facebook-login-page/
 
+### Day 7: Wednesday August 7, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+-Code challenges on Arrays and Loops
+-Created a function that takes an array and returns an array where the first and last values are swapped
+-Created a function that takes an array of numbers and returns an array where each number
+
+**Thoughts:** I cracked my brain a lot trying to figure out this stuff
+
+**Link to work:** https://github.com/vinceEmeka/lesson-11-arrays-loops-challenge
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
