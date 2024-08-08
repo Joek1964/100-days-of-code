@@ -90,6 +90,18 @@ Day 06 #100DaysOfCode
 
 **Link to work:** https://github.com/vinceEmeka/lesson-11-arrays-loops-challenge
 
+### Day 8: Thursday August 8, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+-Code challenge on TODO list
+-I started but the project is not complete
+
+**Thoughts:** I was just too busy today I couldn't do much
+
+**Link to work:**
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
