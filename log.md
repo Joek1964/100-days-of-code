@@ -102,6 +102,18 @@ Day 06 #100DaysOfCode
 
 **Link to work:**
 
+### Day 9: Friday August 9, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+-Code challenge on TODO list
+-I finished the project!!
+
+**Thoughts:** I'm seeing the bigger picture of how html, css and Js connect
+
+**Link to work:** https://github.com/vinceEmeka/todo-list-lesson-11b
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
