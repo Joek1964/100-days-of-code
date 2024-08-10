@@ -114,6 +114,19 @@ Day 06 #100DaysOfCode
 
 **Link to work:** https://github.com/vinceEmeka/todo-list-lesson-11b
 
+### Day 10: Saturday August 10, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+Still on arrays and loops
+-learnt Destructuring is an easier way to get values out from an array and save them in a variable
+
+- Also learnt how continue and break statements work
+  -How to use loops with functions
+
+  **Thoughts:** Arrays and Loops have me thinking really deep
+
 <!-- ### Day 0: February 30, 2016 (Example 1)
 
 ##### (delete me or comment me out)
