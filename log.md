@@ -127,17 +127,21 @@ Still on arrays and loops
 
   **Thoughts:** Arrays and Loops have me thinking really deep
 
-<!-- ### Day 0: February 30, 2016 (Example 1)
+### Day 11: Sunday August 11, 2024
 
 ##### (delete me or comment me out)
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**:
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+- More details about functions
+- Callback functions, Asynchronous codes
+  -In-built JavaScript Functions such as setTimeout, setInterval
 
-**Link to work:** [Calculator App](http://www.example.com)
+  **Thoughts:** Did a little today... we go again tomorow
 
-### Day 0: February 30, 2016 (Example 2)
+  **Link to work:** https://github.com/vinceEmeka/Advanced-func--12a
+
+<!-- ### Day 0: February 30, 2016 (Example 2)
 
 ##### (delete me or comment me out)
 
@@ -145,9 +149,9 @@ Still on arrays and loops
 
 **Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
 
-**Link(s) to work**: [Calculator App](http://www.example.com)
+**Link(s) to work**: [Calculator App](http://www.example.com) -->
 
-### Day 1: June 27, Monday
+<!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
 
@@ -156,4 +160,4 @@ Still on arrays and loops
 **Link(s) to work**
 
 1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence) -->
+2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence) --> -->
