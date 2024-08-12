@@ -141,15 +141,19 @@ Still on arrays and loops
 
   **Link to work:** https://github.com/vinceEmeka/Advanced-func--12a
 
-<!-- ### Day 0: February 30, 2016 (Example 2)
+### Day 12: Monday August 12, 2024
 
 ##### (delete me or comment me out)
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress**:
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+- used setTimeout, setInterval functions to make buttons interactive.
+- learnt about arrow functions and how to use them
+- Hoisting being the advantage of using normal functions
 
-**Link(s) to work**: [Calculator App](http://www.example.com) -->
+  **Thoughts:** Was full throttle today... array and loops, advanced functions
+
+  **Link to work:** https://github.com/vinceEmeka/advanced-func12b
 
 <!-- ### Day 1: June 27, Monday
 
