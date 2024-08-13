@@ -155,6 +155,20 @@ Still on arrays and loops
 
   **Link to work:** https://github.com/vinceEmeka/advanced-func12b
 
+### Day 13: Monday August 12, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+-Using .addEventListener() instead of onclick in the html files makes your codes cleaner
+-. filter() and .map() to loop through arrays
+-Closures; values gets packed together (enclosed) with the function
+
+**Thoughts:** no thoughts today
+
+**Link to work:** https://github.com/vinceEmeka/advanced-func12b
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
