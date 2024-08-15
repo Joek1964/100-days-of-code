@@ -155,7 +155,7 @@ Still on arrays and loops
 
   **Link to work:** https://github.com/vinceEmeka/advanced-func12b
 
-### Day 13: Monday August 12, 2024
+### Day 13: Tuesday August 13, 2024
 
 ##### (delete me or comment me out)
 
@@ -169,7 +169,7 @@ Still on arrays and loops
 
 **Link to work:** https://github.com/vinceEmeka/advanced-func12b
 
-### Day 14: Monday August 12, 2024
+### Day 14: Wednesday August 14, 2024
 
 ##### (delete me or comment me out)
 
@@ -182,7 +182,17 @@ Still on arrays and loops
 
 **Thoughts:** too much distractions today
 
-**Link to work:** https://github.com/vinceEmeka/advanced-func12b
+**Link to work:** https://github.com/vinceEmeka/advanced-func12c
+
+### Day 15: Thursday August 15, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+-Started coding along with @SuperSimpleDev (a great tutor!💯) to add functionality to an e-commerce website with JavaScript.
+I'm pumped!!🤓
+
+**Thoughts:** about to master how to use all these concepts to do magic!
 
 <!-- ### Day 1: June 27, Monday
 
