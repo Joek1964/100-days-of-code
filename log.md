@@ -194,6 +194,25 @@ I'm pumped!!🤓
 
 **Thoughts:** about to master how to use all these concepts to do magic!
 
+### Day 16: Friday August 16, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+I generated the rest of the HTML with JS
+
+**Thoughts:** i couldnt post because my laptop died and there was no power
+
+### Day 17: Saturday August 17, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+Day 17 #100daysofcodechallenge #100DaysOfCode
+Currently working on making the 'Add to cart' buttons interactive
+
+**Thoughts:** Its actually getting interesting!
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
