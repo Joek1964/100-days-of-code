@@ -222,6 +222,19 @@ I was able to make the "Add to cart" button interactive
 
 -Created another JavaScript file with an empty array in it to store the items clicked in the cart and added a data attribute to the button
 
+### Day 19: Monday August 19, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+Added another feature
+-Made the cart quantity in the top right corner interactive
+-First by calculating the quantity in the cart and then displaying the quantity on the page.
+
+**Thoughts:** I feel like I still can't speak javascript yet
+
+**Link to work:** https://github.com/vinceEmeka/javascript-amazon-project-main
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
