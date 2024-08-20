@@ -235,6 +235,19 @@ Added another feature
 
 **Link to work:** https://github.com/vinceEmeka/javascript-amazon-project-main
 
+### Day 20: Teusday August 20, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+- Decided to pause my Amazon project for a while to really solidify JavaScript features
+- So I started the project based curriculum for JavaScript Algorithms and Data Structure course by @freeCodeCamp 💯
+
+**Thoughts:** I decided to solidify javascript concepts by following a project based curriculum by freeCodeCamp
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
