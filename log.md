@@ -235,7 +235,7 @@ Added another feature
 
 **Link to work:** https://github.com/vinceEmeka/javascript-amazon-project-main
 
-### Day 20: Teusday August 20, 2024
+### Day 20: Tuesday August 20, 2024
 
 ##### (delete me or comment me out)
 
@@ -245,6 +245,40 @@ Added another feature
 - So I started the project based curriculum for JavaScript Algorithms and Data Structure course by @freeCodeCamp 💯
 
 **Thoughts:** I decided to solidify javascript concepts by following a project based curriculum by freeCodeCamp
+
+**Link to work:**
+
+### Day 21: Wednesday August 21, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+**Thoughts:** built a pyramid generator
+**Link to work:**
+
+### Day 22: Thursday August 22, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+- finished a Role Playing game
+
+**Thoughts:**
+
+**Link to work:**
+
+### Day 23: Friday August 23, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+-finished a random background color changer
+-50% done with form validation of a calorie counter app
+
+**Thoughts:** I didn't do much today
 
 **Link to work:**
 
