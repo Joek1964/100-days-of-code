@@ -282,6 +282,18 @@ Added another feature
 
 **Link to work:**
 
+### Day 24: Saturday August 24, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+-100% done with form validation of a calorie counter app
+
+**Thoughts:** Tired
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
