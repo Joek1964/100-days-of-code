@@ -294,6 +294,30 @@ Added another feature
 
 **Link to work:**
 
+### Day 25: Sunday August 25, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+-66% Dom Manipulation on ROCK PAPER SCISSORS app
+
+**Thoughts:** Tired
+
+**Link to work:**
+
+### Day 26: Monday August 26, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+-100% Dom Manipulation on ROCK PAPER SCISSORS app
+
+**Thoughts:** Tired
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
