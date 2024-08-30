@@ -318,6 +318,46 @@ Added another feature
 
 **Link to work:**
 
+### Day 27: Tuesday August 27, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+**Thoughts:** SICK!
+
+**Link to work:**
+
+### Day 28: Wednesday August 28, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+**Thoughts:** SICK!
+
+**Link to work:**
+
+### Day 29: Thursday August 29, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:
+
+**Thoughts:** SICK!
+
+**Link to work:**
+
+### Day 30: Friday August 30, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**: Started working on a music player app, made use of array methods such as .join, .map, and spread to join two arrays
+
+**Thoughts:** I have a lot of ground to cover
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
