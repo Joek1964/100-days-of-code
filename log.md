@@ -18,4 +18,4 @@
 
 **Thoughts:** Learned a few things about padding and margin mainly. A lot more basic CSS on this mini project dealing with class selectors and Flexbox.
 
-**Link to work:** [Google-Clone-Site]
+**Link to work:** [Google-Clone-Site](https://1-google-clone-project.netlify.app)
