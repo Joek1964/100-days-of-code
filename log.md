@@ -358,6 +358,17 @@ Added another feature
 
 **Link to work:**
 
+### Day 31: Saturday August 31, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**: continued working on the music player app,
+also started working on my personal portfolio
+
+**Thoughts:** Was a productive day today
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
