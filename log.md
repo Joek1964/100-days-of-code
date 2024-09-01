@@ -369,6 +369,16 @@ also started working on my personal portfolio
 
 **Link to work:**
 
+### Day 32: Sunday September 1, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**: half way done working on the music player app
+
+**Thoughts:**
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
