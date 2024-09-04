@@ -399,6 +399,17 @@ also started working on my personal portfolio
 
 **Link to work:**
 
+### Day 35: Wednesday September 4, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:  
+-Just started building a palindrome checker app which is one of the certification projects for the JavaScript Algorithms and Data Structures (Beta) course on freeCodeCamp.
+
+**Thoughts:**
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
