@@ -421,6 +421,17 @@ also started working on my personal portfolio
 
 **Link to work:**
 
+### Day 37: Friday September 6, 2024
+
+##### (delete me or comment me out)
+
+**Today's Progress**:  
+-Finished palindrome Project
+
+**Thoughts:**
+
+**Link to work:**
+
 <!-- ### Day 1: June 27, Monday
 
 **Today's Progress**: I've gone through many exercises on FreeCodeCamp.
