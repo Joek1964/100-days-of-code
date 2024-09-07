@@ -1,30 +1,21 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 30, 2016 (Example 1)
-##### (delete me or comment me out)
+### Day 0: August 28th 2024 
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Learning Platform**: Scrimba
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Today's Progress**: Completed (Build & deploy your first website). Created a small personal HTML site.
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Thoughts:** I already know a good bit of HTML and CSS. Much of this course is just a refresher before diving deep into CSS and Javascript.
 
-### Day 0: February 30, 2016 (Example 2)
-##### (delete me or comment me out)
+**Link to work:** [Mini-HTML-Personal-Site](https://0-scrimba-personal-site.netlify.app)
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+### Day 1: August 29th 2024 
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Learning Platform**: Scrimba
 
-**Link(s) to work**: [Calculator App](http://www.example.com)
+**Today's Progress**: Created a google.com clone
 
+**Thoughts:** Learned a few things about padding and margin mainly. A lot more basic CSS on this mini project dealing with class selectors and Flexbox.
 
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
-
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+**Link to work:** [Google-Clone-Site](https://1-google-clone-project.netlify.app)
