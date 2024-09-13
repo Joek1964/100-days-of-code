@@ -20,3 +20,7 @@
 
 **Todays Progress** Put "Add Decision Logic to Your Code Using if, else, and else if statements in C#" on hold for now. Going to start
                     work on the freeCodeCamp core courses.
+                    In Progess: Learn CSS Colors by Building a Set of Colored Markers
+                    Completed:
+                        - Learn HTML by Building a Cat Photo App
+                        - Learn Basic CSS by Building a Cafe Menu
