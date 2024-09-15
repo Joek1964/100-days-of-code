@@ -1,5 +1,6 @@
 # 100 Days Of Code - Log
 
+###########Round 1###############
 ### Day 1: September 11, 2024
 
 **Today's Progress:**: Completed the following modules at freeCodeCamp for C#:
@@ -24,6 +25,11 @@
                     Completed:
                         - Learn HTML by Building a Cat Photo App
                         - Learn Basic CSS by Building a Cafe Menu
+
+### Day 4, September 14, 2024
+
+**Todays Progress** In Progess: Learn HTML Forms by Building a Registration Form
+                Completed: Learn CSS Colors by Building a Set of Colored 
 
 ###Day 4, September 14, 2024
 
