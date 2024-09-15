@@ -24,3 +24,8 @@
                     Completed:
                         - Learn HTML by Building a Cat Photo App
                         - Learn Basic CSS by Building a Cafe Menu
+
+###Day 4, September 14, 2024
+
+**Todays Progress** In Progess: Learn HTML Forms by Building a Registration Form 
+Completed: Learn CSS Colors by Building a Set of Colored
