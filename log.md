@@ -42,3 +42,7 @@ Completed: Learn CSS Colors by Building a Set of Colored
 
     R1 Day 5, September 15, 2024
 **Today's Progress** In Progress: Certifcation Project -- Survey form (doing in VSC) github: https://github.com/Joek1964/100-days-of-code. Did some reading about CSS at W3CSchools (https://www.w3schools.com/css)
+
+### R1 Day 6, September 17, 2024
+*note* Somewhere I lost a day and I don't know how, as I've done something each day. :(
+**Today's Progress* In Process: Still working on Certification for Responsive Web Design. Went back and am redoing Learn HTML Forms by Building a Registration Form, seems not enough information stuck last time.  
